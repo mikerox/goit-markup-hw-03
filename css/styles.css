@@ -13,6 +13,23 @@
 *::after {
     box-sizing: border-box;
 }
+/*General Styling*/
+.header-container {
+    width: 1158px;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -26,6 +43,14 @@ body {
     text-decoration: none;
 }
 
+.top-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 40px;
+}
+
 .menu a {
     color: var(--NAVY-BLUE, #2E2F42);
     font-size: 16px;
@@ -37,17 +62,14 @@ body {
 
 ul {
     padding-left: 0%;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+
 }
 /** logo**/
 .logo span {
     color: var(--IRIS, #4D5AE5);
-    font-family: 'Raleway';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 21px;
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
 
 }
 
@@ -74,14 +96,25 @@ ul {
     letter-spacing: 1.12px;
 }
 
-.bg-dark {
+.header-bg-dark {
     background-color: #2E2F42;
+
 }
 
-.top-menu:hover,
-.top-menu:focus {
+.header-bg-dark {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
+}
+
+.menu-link:hover,
+.menu-link:focus {
     color: #4D5AE5;
-    transition: 0.30s ease;
+}
+
+.contacts-details a:hover,
+.contacts-details a {
+    color: #4D5AE5;
 }
 
 .btn {
@@ -96,6 +129,7 @@ ul {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+
 .contacts a {
     text-decoration: none;
     color: #2E2F42;
@@ -106,19 +140,70 @@ ul {
     letter-spacing: 0.32px;
     
 }
+/* Header 3 */
+.service-title {
+    color: #2E2F42;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+/*Service description*/
+.service-des {
+    width: 264px;
+    color: var(--SLATE, #434455);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+/*What Are We Doing(wawd)*/
+.section-wawd {
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+/* Header 2 */
+.team {
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+
+
+
+
+.footer-bg-dark {
+    background-color: #2E2F42;
+}
 
 footer .logo {
     color: var(--CLOUD, #F4F4FD);
-        font-family: "Raleway";
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: 21px;
-        letter-spacing: 0.54px;
-        text-transform: uppercase;
-        display: flex;
-        width: 71px;
-        height: 21px;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    display: flex;
+    width: 71px;
+    height: 21px;
 }
 
 footer p {
