@@ -5,6 +5,7 @@
     --WHITE: #FFF;
     --CLOUD: #F4F4F4;
     --OCEAN: #404BBF;
+    --SLATE: #434455;
 
 }
 
@@ -13,7 +14,7 @@
 *::after {
     box-sizing: border-box;
 }
-/*General Styling*/
+
 .header-container {
     width: 1158px;
 }
@@ -29,6 +30,13 @@
     display: flex;
     align-items: center;
     gap: 40px;
+}
+
+.container {
+    width: 1158px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 body {
@@ -96,15 +104,11 @@ ul {
     letter-spacing: 1.12px;
 }
 
-.header-bg-dark {
-    background-color: #2E2F42;
-
-}
-
-.header-bg-dark {
+.header-solution {
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
+    background-color: #2E2F42;
 }
 
 .menu-link:hover,
@@ -119,7 +123,7 @@ ul {
 
 .btn {
     display: inline-flex;
-    cursor: pointer;
+    
     padding: 16px 32px;
     align-items: flex-start;
     gap: 10px;
@@ -127,6 +131,18 @@ ul {
     background: var(--IRIS, #4D5AE5);
     color: var(--WHITE);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.btn {
+    border-style: none;
+    font-weight: 500;
+}
+
+.btn:hover {
+    opacity: .5;
+    cursor: pointer;
+    color: #404BBF;
+
 }
 
 
@@ -171,8 +187,16 @@ ul {
     text-transform: capitalize;
 }
 
+.work-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    padding: 76px;
+}
+
 /* Header 2 */
-.team {
+h2 {
     color: var(--NAVY-BLUE, #2E2F42);
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -184,8 +208,15 @@ ul {
     text-transform: capitalize;
 }
 
+.team-header {
+    width: 1440px;
+    height: 732px;
+    flex-shrink: 0;
+    background: var(--CLOUD, #F4F4FD);
+    display: flex;
 
 
+}
 
 
 .footer-bg-dark {
