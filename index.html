@@ -14,25 +14,26 @@
 </head>
 
 <body>
-    <div class="container">
+    
     <header class="header-container header-flex">
         <!-- Logo-->
-      <div class="flex-container">
-        <a href="#" class="logo"><span>WEB</span>STUDIO</a>
-        
+      <div class="logo-container">
+        <a href="#" class="logo-link"><span class="logo-web">WEB</span><span class="logo-studio-nav">STUDIO</span></a>
+        </div>
         <nav class="menu">
-
+            <div class="menu-top">
             <ul class="top-menu">
                 <li><a href="#studio" class="menu-link">Studio</a></li>
-                <li><a href="#portfolio" class="menu-link">Portfolio</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
                 <li><a href="#contacts" class="menu-link">Contacts</a></li>
-
-            </ul>
+                </ul>
+            </div>
+            
             
         </nav>
-        </div>
+        
         <!--Contacts-->
-
+        <div class="info">
         <ul class="contacts">
             <li class="contacts-details">
                 <a href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -41,19 +42,21 @@
                 <a href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
             </li>
         </ul>
+        </div>
     </header>
 
     <main>
-        <section class="header-solution">
-            <h1 class="header-main">Effective Solutions <br /> for Your Business</h1>
+        <section class="hero">
+            <h1 class="hero-text">Effective Solutions <br /> for Your Business</h1>
         
             <!--Order Service button-->
-            <div class="button">
             <button class="btn" type="button">Order Service</button>
-            </div>
         </section>
-
+        
+        <div class="service-container">
         <section class="services-section">
+            
+               <div> 
             <ul class="service-list">
                 <li class="service-item">
                     <h3 class="service-title">Strategy</h3>
@@ -74,12 +77,17 @@
                     <h3 class="service-title">Technologies</h3>
                     <p class="service-des">Design practice focused on digital experiences. We bring forth a deep passion for
                         problem-solving.</p>
+                        
                 </li>
             </ul>
-        </section>
-        <div class="work-section">
-        <section class="our-work-section">
             </div>
+            
+        </section>
+        </div>
+    
+        
+        <section class="our-work-section">
+            
             <h2 class="section-wawd">What Are We Doing</h2>
             <div class="device-images">
             <ul class="device-images-list">
@@ -89,10 +97,10 @@
             </ul>
             </div>
         </section>
-        <div class="team-header">
+        
         <section class="header-team">
-            </div>
             <h2>Our Team</h2>
+            <div class="t-m">
             <ul class="team-members">
                 <li class="team-mark">
                     <img src="images/Mark_Guerrero.jpg" alt="Mark Guerrero">
@@ -115,16 +123,19 @@
                     <p>UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
 
     </main>
 
     <footer class="footer-bg-dark">
-        <a href="#" class="logo"><span>WEB</span>STUDIO</a>
-        <p>Increase the flow of customers and<br /> sales for your business with digital<br /> marketing & growth
+        <div class="footer">
+        <a href="#" class="logo-link"><span class="logo-web">WEB</span>STUDIO</a>
+        </div>
+        <p class="footer-text">Increase the flow of customers and<br /> sales for your business with digital<br /> marketing & growth
             solutions.</p>
     </footer>
-    </div>
+    
 
 
 
