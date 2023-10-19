@@ -461,15 +461,12 @@ footer .logo-link {
     align-items: center;
     text-align: center;
     width: calc(33.33% - 20px);
-    /* 3 images per row with spacing */
     margin: 10px;
-    /* Add margin for spacing between items */
     box-sizing: border-box;
 }
 
 .project-item img {
     max-width: 100%;
-    /* Make the images responsive within their container */
     height: auto;
 }
 
@@ -477,7 +474,7 @@ footer .logo-link {
     font-size: 18px;
     font-weight: 700;
     margin-top: 10px;
-    /* Add margin to separate the title from the image */
+   
 }
 
 .p-tag {
@@ -485,7 +482,6 @@ footer .logo-link {
     font-weight: 500;
     color: var(--OCEAN, #404BBF);
     margin-top: 5px;
-    /* Add margin to separate the tag from the title */
 }
 
 /*Caption Header*/
