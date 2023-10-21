@@ -9,6 +9,19 @@
 
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -45,7 +58,7 @@ body {
 
 .logo-web {
     color: var(--IRIS, #4D5AE5);
-    font-family: Raleway;
+    font-family: 'Raleway';
     font-size: 18px;
     font-style: normal;
     font-weight: 800;
@@ -54,10 +67,6 @@ body {
     letter-spacing: 0.54px;
     text-transform: uppercase;
 }
-
-/* .logo-web {
-    padding-left: 156px;
-} */
 
 .logo-studio-nav {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -70,12 +79,12 @@ body {
     display: inline-flex;
 }
 
-.menu-top {
+/* .menu-top {
     padding-left: 0;
     margin: 0;
     display: flex;
     padding-right: 40px;
-}
+} */
 
 .menu-link {
     padding-left: 76px;
@@ -110,7 +119,7 @@ body {
 }
 
 .nav-link {
-    gap: 40px;
+    
     text-decoration: none;
 }
 
@@ -147,6 +156,7 @@ ul {
 .menu-link:hover,
 .menu-link:focus {
     color: var(--IRIS, #4D5AE5);
+    transition: ease 0.5s;
 }
 
 .nav-link:hover,
@@ -194,6 +204,8 @@ ul {
 
 
 .btn:hover {
+    /* background: #d4f542; */
+    /* color: var(--WHITE, #FFFFFF); */
     opacity: .6;
     cursor: pointer;
 
@@ -372,8 +384,8 @@ ul {
 }
 
 .footer {
-    /* flex-direction: column;
-    justify-content: center; */
+    flex-direction: column;
+    justify-content: center;
     padding-left: 156px;
     padding-top: 140px;
 }
@@ -436,38 +448,70 @@ footer .logo-link {
 .buttons {
     display: flex;
     gap: 24px;
+    align-items: center;
+    padding: 12px 24px;
+    display: inline-flex;
+        
 }
 
 .p-button {
-    color: var(--WHITE, #FFF);
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.64px;
     display: flex;
     padding: 12px 24px;
-    gap: 24px;
-    align-items: center;
-    border-radius: 4px;
+    align-items: flex-start;
+}
+
+.p-button {
+    color: var(--IRIS, #4D5AE5);
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.64px;
+        border-radius: 4px;
+        background: var(--CLOUD, #F4F4FD);
+        border: 1px solid var(--CORNFLOWER, #E7E9FC);
+        cursor: pointer;
+        transition-duration: .75s;
+}
+
+.p-button:hover {
     background: var(--OCEAN, #404BBF);
+    color: var(--WHITE, #FFFFFF);
 }
 /*Portfolio button end*/
 
 .project-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: calc(33.33% - 20px);
-    margin: 10px;
-    box-sizing: border-box;
+    /* display: flex; */
+    flex-direction: row;
+    width: 360px;
+    height: 420px;
+    padding-bottom: 0px;
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+    gap: 32px;
+    flex-shrink: 0;
 }
 
-.project-item img {
-    max-width: 100%;
-    height: auto;
+/*Image Portfolio*/
+
+.image-portfolio {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    padding-bottom: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 156px;
+    padding-bottom: 120px;
+    
+}
+
+/*Image Portfolio*/
+
+.project-item {
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--WHITE, #FFF);
 }
 
 .p-caption-header {
@@ -477,6 +521,16 @@ footer .logo-link {
    
 }
 
+.p-caption {
+    display: flex;
+    padding: 32px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    
+}
+
 .p-tag {
     font-size: 16px;
     font-weight: 500;
@@ -484,20 +538,22 @@ footer .logo-link {
     margin-top: 5px;
 }
 
-/*Caption Header*/
+.p-tag {
+    text-align: justify;
+    padding-left: 15px;
+}
+
+/*Caption Header Layout*/
 
 .p-caption-header {
     display: flex;
-        padding: 0px 16px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 8px;
-        align-self: stretch;
+    padding: 0px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
 }
-
-
-
 
 
 
